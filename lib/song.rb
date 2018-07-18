@@ -22,9 +22,8 @@ class Song
   end
   
   def self.genres
-    @@genres ||= []
-    @@genres << @genre
-    binding.pry
+    @@genres.to_set
+    #binding.pry
   end
   
   def self.artists
