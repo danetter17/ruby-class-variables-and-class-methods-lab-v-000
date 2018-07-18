@@ -21,7 +21,7 @@ class Song
   
   def self.genres
     @@genres ||= []
-    @@genres << genre
+    @@genres << @genre
   end
   
   def self.artists
