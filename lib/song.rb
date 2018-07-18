@@ -1,3 +1,5 @@
+require "pry"
+
 class Song
   @@count = 0
   @@genres = []
@@ -22,6 +24,7 @@ class Song
   def self.genres
     @@genres ||= []
     @@genres << @genre
+    binding.pry
   end
   
   def self.artists
