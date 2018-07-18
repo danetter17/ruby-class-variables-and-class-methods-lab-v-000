@@ -20,7 +20,8 @@ class Song
   end
   
   def self.genres
-    @@
+    @@genres ||= []
+    @@genres << genre
   end
   
   def self.artists
